@@ -1,0 +1,42 @@
+header#header.region
+  section.header-content
+    / = image_tag 'logo.svg', :alt => 'Logo', :class => 'logo'
+    = partial 'assets/images/logo.svg'
+		h1.site-title Code examples and demos
+
+		#skip
+		  a href="#content" Skip to Main Content
+  section.header-nav
+		nav.top-bar (data-topbar role="navigation")
+		  ul.title-area
+		    li.name
+		    li.toggle-topbar.menu-icon
+		      a href="#"
+		        span Menu
+
+		  section.top-bar-section
+		    ul.left
+			    - data.menu.header.items.each_with_index do |item, index|
+			      - if item.l2items
+				      li.has-dropdown
+			          a href="#{item.href}"
+			            =item.content
+		            ul.dropdown
+		              - item.l2items.each_with_index do |item, index|
+			              li
+			                a href="#{item.href}"
+			                  =item.content
+			      - else
+				      li
+			          a href="#{item.href}"
+			            =item.content
+
+	      / li
+	      /   a href="#" Right Button Active
+	      / li.has-dropdown
+	      /   a href="#"Right Button Dropdown
+	      /   ul.dropdown
+	      /     li
+	      /       a href="#"First link in dropdown
+	      /     li
+	      /       a href="#" Active link in dropdown

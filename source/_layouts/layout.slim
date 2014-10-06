@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    / - if  data.page.title.present?
+    /   title #{data.page.title} | #{data.info.project}
+    / - else
+    /   title #{data.info.project}
+    title Code examples and demos | Marlene Williams
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=0.0"
+    meta name="description" content="Code examples and demonstrations"
+    link rel="shortcut icon" href="/favicon.ico"
+    == stylesheet_link_tag 'style'
+    == javascript_include_tag 'modernizr'
+    /![if IE 9]><script type="text/javascript">document.documentElement.setAttribute('data-useragent', navigator.userAgent);</script><![endif]
+
+  - body_classes = []
+  - body_classes += page_classes.split if page_classes.present?
+  / - body_classes += @proxy_classes.split if @proxy_classes.present?
+  - body_classes += data.page.page_classes.split if data.page.page_classes.present?
+  - body_classes = body_classes.compact.uniq
+
+  body class="#{body_classes.join(' ')}"
+    == partial 'header'
+    main#content.region role="main" == yield
+    == partial 'footer'
+    / == partial 'modal'
+
+    == javascript_include_tag 'all'

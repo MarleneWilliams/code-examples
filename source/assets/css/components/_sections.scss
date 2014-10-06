@@ -1,0 +1,19 @@
+section {
+	article > & {
+		padding: 0.75em 0;
+		&::after {
+			display: block;
+			content: "~";
+			font-size: 4em;
+			line-height: 0;
+			text-align: center;
+			width: 100%;
+		}
+		&:last-child {
+			&::after {
+				content: '';
+				display: none;
+			}
+		}
+	}
+}
