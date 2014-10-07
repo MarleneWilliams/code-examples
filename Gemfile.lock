@@ -71,6 +71,8 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
+    middleman-gh-pages (0.0.3)
+      rake (> 0.9.3)
     middleman-livereload (3.3.4)
       em-websocket (~> 0.5.1)
       middleman-core (~> 3.2)
@@ -140,6 +142,7 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 1.0)
   middleman
+  middleman-gh-pages
   middleman-livereload
   middleman-smusher
   ruby18_source_location

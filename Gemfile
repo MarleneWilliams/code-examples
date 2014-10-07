@@ -9,6 +9,7 @@ gem "middleman-livereload"
 
 gem "slim"
 gem "middleman-smusher"
+gem "middleman-gh-pages"
 
 gem "sass", "~> 3.3.0"
 gem 'sass-globbing', '1.1.0'
