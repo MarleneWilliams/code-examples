@@ -1,7 +1,0 @@
-.region {
-	@include grid-row();
-	> article,
-	> section {
-		@include grid-column($full-width);
-	}
-}
