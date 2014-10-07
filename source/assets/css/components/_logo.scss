@@ -1,0 +1,42 @@
+#logo-svg {
+	display: block;
+	margin: .5em auto 1em auto;
+	max-width: 250px;
+	width: 70%;
+
+	@include respond-to($medium-up) {
+		float: left;
+		margin-right: 2em;
+		max-width: 11em;
+		width: 25%;
+	}
+
+	@include respond-to($large-up) {
+		width: 6em;
+	}
+}
+
+#polygon {
+	fill: $gainsboro;
+}
+
+#circle-outer {
+	stroke: $aluminum;
+	@include respond-to($large-up) {
+		display: none;
+	}
+}
+
+#circle-inner {
+	stroke: $monsoon;
+	@include respond-to($medium-up) {
+		display: none;
+	}
+}
+
+#star {
+	fill: $primary-color;
+	@include respond-to($large-up) {
+		width: 3em;
+	}
+}

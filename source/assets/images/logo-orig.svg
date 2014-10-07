@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="244.312px" height="243.809px" viewBox="0 0 244.312 243.809" enable-background="new 0 0 244.312 243.809"
+	 xml:space="preserve">
+<path id="polygon" d="M229.831,148.314l14.481-25.014l-14.399-24.873l0.062-37.553l-32.721-18.859L183.234,17.8h-27.995L124.356,0
+	L93.494,17.8H61.078L44.829,45.867L18.539,61.03l-0.05,30.334L0,123.3l18.384,31.755l-0.046,27.88l24.292,14.001L61.078,228.8
+	h36.837l26.041,15.009l26.023-15.009h33.255l16.67-28.794l29.87-17.228L229.831,148.314z M163.927,190.862
+	c-39.229,22.626-89.375,9.166-112.001-30.065c-16.72-28.989-13.715-63.928,4.814-89.329c14.971-19.779,38.697-32.564,65.415-32.564
+	c45.288,0,82,36.713,82,82c0,18.336-6.021,35.264-16.19,48.922C181.599,178.111,173.542,185.317,163.927,190.862z"/>
+<circle id="circle-outer" fill="none" stroke="#000000" stroke-miterlimit="10" cx="122.156" cy="120.904" r="51"/>
+<g id="circle-inner">
+	
+		<circle fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.0108,12.0108" cx="122.156" cy="120.904" r="65"/>
+</g>
+<polygon id="star" points="122.156,82.008 134.144,106.299 160.952,110.194 141.554,129.103 146.133,155.801 122.156,143.196 
+	98.179,155.801 102.758,129.103 83.36,110.194 110.167,106.299 "/>
+</svg>

@@ -1,0 +1,95 @@
+// Hide block titles
+%block-title-hide {
+  .block-title {
+    display: none;
+  }
+}
+
+// Hide other things
+.element-invisible,
+%hide {
+  display: none;
+}
+
+// Block layout fixes
+%block-layout-fix {
+  clear: both;
+  margin-bottom: 1em;
+}
+
+// Inline list center
+%inline-list-center {
+  margin: 0;
+  text-align: center;
+  li {
+    display: inline;
+    a {
+      padding: .25em .5em;
+    }
+  }
+}
+
+// Floats
+%float-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+%float-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+// Hide text with an icon
+%hide-text-icon{
+  height:1.5em;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  width: 1.25em;
+  &:before {
+  }
+}
+
+// Read more
+%read-more {
+  text-align: right;
+  a, a & {
+    // @include icon-font(play3, after);
+  }
+}
+
+//
+// Reusable styles
+//
+
+// Font styles
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+
+// Phone number
+.phone-number {
+  font-weight: bold;
+  // @include icon-font(phone) {
+  //   font-weight: normal;
+  //   padding: 0 0.25em;
+  // }
+}
+// Email
+a.email,
+.email a {
+  font-weight: bold;
+  // @include icon-font(envelop) {
+  //   font-weight: normal;
+  //   padding: 0 0.25em;
+  // }
+}
+
+%no-bullet,
+.no-bullet {
+  @extend .no-bullet;
+  margin: 0;
+}
